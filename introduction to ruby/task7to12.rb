@@ -294,3 +294,4 @@ end
 using_lambda_with_functions(add_10, 10)
  
 using_lambda_with_functions(multiply_2, 20)
+
