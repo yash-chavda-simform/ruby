@@ -42,7 +42,7 @@ class Car
   #task-2 Created a method that takes an argument of price and returns the integer value of the price plus 18% GST of that price
   def calculate_gst(price)
     gst=price*0.18
-    return price,(gst+price).to_i
+    return price,gst.to_i
   end
 end
 
