@@ -117,3 +117,4 @@ def using_lambda_with_functions(lambda, number)       # A Function using lambda
 end
 using_lambda_with_functions(add_10, 10)               # Passing lambda to function
 using_lambda_with_functions(multiply_2, 20)
+
