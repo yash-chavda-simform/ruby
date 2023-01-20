@@ -19,15 +19,19 @@ class Car                                 #super class
     @year=year
     @model=model
   end
+  
   def self.nissan                         #we can create class level method using self keyword
     puts "it's nissan"
   end
+  
   def mustang                             #public method
     puts "it's mustang"
   end
+  
   def call                                #public method in which we are calling private method
     bmw
   end
+  
   def range_rover
     puts "it's parent range-rover"
   end
@@ -37,6 +41,7 @@ class Car                                 #super class
   def bmw                                 #private method
     puts "it's bmw"
   end
+  
   def audi                                #private method
     puts "it's audi"
   end
@@ -48,9 +53,11 @@ class Luxury < Car                        #Luxury inherit Car class(single level
   def rolls_royce
     puts "it's rolls-royce"
   end
+  
   def bentley
     puts "it's bentley"
   end
+  
   def range_rover
     super                                 #using super keyword we can access parent method which has same name
     bmw                                   #calling private method from child class
@@ -96,5 +103,3 @@ musclecar.mustang                         #it will call the method mustang of ch
 
 fastercar=Fastercar.allocate              #object of child class
 fastercar.mustang                         #it will call the onject of parent class because there is no mathod with the same name
-
-
